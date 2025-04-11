@@ -10,7 +10,7 @@ pub fn build(b: *std.Build) void {
     const prefix_path = b.pathJoin(&.{ build_root, "zig-out", "tesseract-lib" });
 
     // Check if tesseract autogen.sh exists
-    const autogen_path = b.pathFromRoot(tesseract_path ++ "/autogen.sh");
+    const autogen_path = b.pathFromRoot("autogen.sh");
     std.fs.cwd().access(autogen_path, .{}) catch |err| {
         std.debug.print("Search for autogen here: {s}\nError: {s}\n", .{ autogen_path, @errorName(err) });
     };
