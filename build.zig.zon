@@ -29,6 +29,7 @@
         "configure~",
         "doc",
         "include",
+        "java",
         "libtesseract.la",
         "libtesseract_ccutil.la",
         "libtesseract_lstm.la",
